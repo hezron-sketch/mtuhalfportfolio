@@ -6,6 +6,7 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  { name: "Resume", href: "/resume" },
 ];
 
 export default function Home() {
@@ -36,13 +37,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          A computer enthusiast writing code for money 
-          <div>
-          
-            <button className="bg-green-700 rounded-md text-green-200 p-2 font-bold">
-              Resume
-            </button>
-          </div>
+          A computer enthusiast writing code for money.
         </h2>
       </div>
     </div>
