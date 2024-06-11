@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-import Resume from "./resume/resume";
+// import Resume from "./resume/resume";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
