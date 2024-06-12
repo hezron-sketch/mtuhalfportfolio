@@ -1,12 +1,6 @@
 import React from "react";
 import { Navigation } from "../components/nav";
-import {
-  LocateFixedIcon,
-  LocateIcon,
-  Mail,
-  PhoneCallIcon,
-  PinIcon,
-} from "lucide-react";
+import { Mail, PhoneCallIcon, PinIcon } from "lucide-react";
 // import './Resume.css'; // Ensure your CSS file path is correct
 
 interface Experience {
@@ -30,23 +24,23 @@ interface Skill {
 const experiences: Experience[] = [
   {
     company: "SwahiliPot Hub",
-    position: "Software Engineer",
+    position: "Software Developer",
     duration: "May 2024 - Present",
     responsibilities: [
-      "Developed and maintained web applications.",
-      "Collaborated with cross-functional teams.",
-      "Implemented responsive design.",
+      "Developing and maintaining web applications.",
+      "Collaborating with cross-functional teams.",
+      "Implementing responsive design.",
     ],
   },
   {
     company: "Localhost Developers",
-    position: "Software Engineer",
+    position: "Software Developer",
     duration: "Jun 2022 - Present",
     responsibilities: [
-      "Built interactive UI components.",
-      "Optimized application performance.",
-      "Wrote unit and integration tests.",
       "Developed the localhostwines Web app",
+      "Building responsive and interactive UI components.",
+      "Optimizing application performance.",
+      "Writing unit and integration tests.",
     ],
   },
 ];
@@ -86,17 +80,19 @@ export default function Resume() {
                 <Mail size={20} /> &nbsp; hpaulhezne@gmail.com
               </div>{" "}
               <br />
-              <div className="inline-flex">
+              <div className="inline-flex ">
                 {" "}
                 <PhoneCallIcon size={20} /> &nbsp;+254707069007
               </div>
+              <br />
+              <br />
+              <hr />
+              <br />
             </p>
           </header>
-          <br />
+
           <section>
-            <h2 className="font-bold underline underline-offset-1">
-              Experience
-            </h2>
+            <h2 className="font-bold ">Experience</h2>
             {experiences.map((exp, index) => (
               <div key={index} className="experience">
                 <h3 className="font-bold">
@@ -112,10 +108,10 @@ export default function Resume() {
             ))}
           </section>
           <br />
+          <hr />
+          <br />
           <section>
-            <h2 className="font-bold underline underline-offset-1">
-              Education
-            </h2>
+            <h2 className="font-bold">Education</h2>
             {education.map((edu, index) => (
               <div key={index} className="education">
                 <h3>{edu.degree}</h3>
@@ -125,8 +121,10 @@ export default function Resume() {
             ))}
           </section>
           <br />
+          <hr />
+          <br />
           <section>
-            <h2 className="font-bold underline underline-offset-1">Skills</h2>
+            <h2 className="font-bold">Skills</h2>
             <ul className="skills">
               {skills.map((skill, index) => (
                 <li key={index}>
