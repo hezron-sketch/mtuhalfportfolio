@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "mtu-half",
     card: "summary_large_image",
   },
   icons: {
@@ -50,7 +50,7 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
+  src: "../public/fonts/SpaceGrotesk-VariableFont_wght.ttf",
   variable: "--font-calsans",
 });
 
