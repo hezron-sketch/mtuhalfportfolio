@@ -66,7 +66,7 @@ export default function Resume() {
     <>
       <Navigation />
       <div className="flex items-center m-auto">
-        <div className="m-auto pt-20 px-10 text-white">
+        <div className="m-auto pt-20 px-10 text-white font-thin font-display">
           <header>
             <h1 className="font-bold underline underline-offset-8">mtu HALF</h1>
             <br />
