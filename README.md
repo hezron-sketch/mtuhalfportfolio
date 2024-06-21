@@ -1,2 +1,3 @@
-git clone
-and npm run dev
+#### To run it, git clone the repository
+#### Run `pnpm install`
+#### Then `npm run dev`
