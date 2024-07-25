@@ -39,6 +39,9 @@ export default function Home() {
         <h2 className="text-sm text-zinc-500 ">
           A computer enthusiast writing code for money.
         </h2>
+        <h2 className="className="text-sm text-zinc-400">
+          With dreams to go far...😂😂😂  
+      </h2>
       </div>
     </div>
   );
