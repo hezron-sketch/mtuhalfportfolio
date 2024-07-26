@@ -31,7 +31,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-5xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
         Hezron Onyango
       </h1>
       <br />
@@ -46,9 +46,10 @@ export default function Home() {
         style={{ borderRadius: 100 }}
       />
       <br />
-      <h2 className="text-white/[0.8] text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
+      <h2 className="text-white/[0.8] sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
         Software Developer | Graphic Designer
       </h2>
+
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
           A computer enthusiast coding and crafting visuals for fun😂😁.
