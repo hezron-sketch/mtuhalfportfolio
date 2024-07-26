@@ -9,13 +9,13 @@ const socials = [
     icon: <Twitter size={20} />,
     href: "https://x.com/MtuHalf",
     label: "Twitter",
-    handle: "@mtu half",
+    handle: "@mtu HALF",
   },
   {
     icon: <Mail size={20} />,
     href: "mailto:hpaulhezne@gmail.com",
     label: "Email",
-    handle: "mtu half's mail",
+    handle: "Hezron's Mail",
   },
   {
     icon: <Github size={20} />,

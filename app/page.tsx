@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Image from "next/image";
 // import Resume from "./resume/resume";
 
 const navigation = [
@@ -30,18 +31,28 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-5xl whitespace-nowrap bg-clip-text ">
         Hezron Onyango
       </h1>
+      <br />
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      {/* <img src="./public/3d-rendering-emotions.jpg" alt="profile picture" /> */}
+      <Image
+        src="/images/prof.jpg"
+        height={200}
+        width={200}
+        // placeholder="blur"
+        alt="profile picture"
+        style={{ borderRadius: 100 }}
+      />
+      <br />
+      <h2 className="text-white/[0.8] text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
+        Software Developer | Graphic Designer
+      </h2>
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          A computer enthusiast writing code for money.
+          A computer enthusiast coding and crafting visuals for fun😂😁.
         </h2>
-        <h2 className="className="text-sm text-zinc-400">
-          With dreams to go far...😂😂😂  
-      </h2>
       </div>
     </div>
   );
