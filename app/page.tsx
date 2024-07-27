@@ -46,13 +46,39 @@ export default function Home() {
         style={{ borderRadius: 100 }}
       />
       <br />
-      <h2 className="text-white/[0.8] sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
+      <h2 className="text-green-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
         Software Developer | Graphic Designer
       </h2>
+      <div className="duration-1000 animate-fade-in mt-8 flex justify-center gap-3">
+        <Image
+          src="/images/pylog.png"
+          alt="python-logo"
+          height={30}
+          width={30}
+        />
+        <Image
+          src="/images/flutterlogo.png"
+          alt="python-logo"
+          width={30}
+          height={30}
+        />
+        <Image
+          src="/images/jslogo.png"
+          alt="python-logo"
+          width={30}
+          height={30}
+        />
+        <Image
+          src="/images/adobei.png"
+          alt="python-logo"
+          width={30}
+          height={30}
+        />
+      </div>
 
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          A computer enthusiast coding and crafting visuals for fun😂😁.
+        <h2 className="text-sm text-zinc-200 font-display">
+          A computer enthusiast, I code ☕ and craft visuals🖼️.
         </h2>
       </div>
     </div>
