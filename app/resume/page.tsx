@@ -54,6 +54,7 @@ const education: Education[] = [
 ];
 
 const skills: Skill[] = [
+  { name: "Python", level: "Advanced" },
   { name: "JavaScript", level: "Advanced" },
   { name: "Django", level: "Advanced" },
   { name: "Data analysis", level: "Advanced" },

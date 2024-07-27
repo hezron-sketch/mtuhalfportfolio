@@ -46,33 +46,34 @@ export default function Home() {
         style={{ borderRadius: 100 }}
       />
       <br />
-      <h2 className="text-green-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
+      <h2 className="text-gray-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
         Software Developer | Graphic Designer
       </h2>
-      <div className="duration-1000 animate-fade-in mt-8 flex justify-center gap-3">
+      <code className="font-thin mt-7 text-white">Stack:</code>
+      <div className="duration-1000 animate-fade-in mt-1 flex justify-between gap-2 h-30 border hover:bg-slate-600 p-4">
         <Image
           src="/images/pylog.png"
           alt="python-logo"
-          height={30}
-          width={30}
+          height={20}
+          width={20}
         />
         <Image
           src="/images/flutterlogo.png"
           alt="python-logo"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
         <Image
           src="/images/jslogo.png"
           alt="python-logo"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
         <Image
           src="/images/adobei.png"
           alt="python-logo"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
       </div>
 
