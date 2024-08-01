@@ -5,7 +5,7 @@ import Image from "next/image";
 // import Resume from "./resume/resume";
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
+  { name: "My Work", href: "/projects" },
   { name: "Contact", href: "/contact" },
   { name: "Resume", href: "/resume" },
 ];
@@ -49,33 +49,6 @@ export default function Home() {
       <h2 className="text-gray-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
         Software Developer | Graphic Designer
       </h2>
-      <code className="font-thin mt-7 text-white">Stack:</code>
-      <div className="duration-1000 animate-fade-in mt-1 flex justify-between gap-2 h-30 border hover:bg-slate-600 p-4">
-        <Image
-          src="/images/pylog.png"
-          alt="python-logo"
-          height={20}
-          width={20}
-        />
-        <Image
-          src="/images/flutterlogo.png"
-          alt="python-logo"
-          width={20}
-          height={20}
-        />
-        <Image
-          src="/images/jslogo.png"
-          alt="python-logo"
-          width={20}
-          height={20}
-        />
-        <Image
-          src="/images/adobei.png"
-          alt="python-logo"
-          width={20}
-          height={20}
-        />
-      </div>
 
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-200 font-display">

@@ -55,6 +55,8 @@ const education: Education[] = [
 
 const skills: Skill[] = [
   { name: "Python", level: "Advanced" },
+  { name: "Flutter", level: "Intermediate" },
+  { name: "Web3", level: "Intermediate" },
   { name: "JavaScript", level: "Advanced" },
   { name: "Django", level: "Advanced" },
   { name: "Data analysis", level: "Advanced" },
@@ -69,7 +71,9 @@ export default function Resume() {
       <div className="flex items-center m-auto">
         <div className="m-auto pt-20 px-10 text-white font-thin font-display">
           <header>
-            <h1 className="font-bold underline underline-offset-8">mtu HALF</h1>
+            <h1 className="font-bold underline underline-offset-8">
+              Hezron Onyango
+            </h1>
             <br />
             <p>
               <div className="inline-flex">
