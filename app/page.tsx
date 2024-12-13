@@ -12,14 +12,14 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-grey">
+    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-600">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-xl duration-500 text-white hover:text-zinc-300"
             >
               {item.name}
             </Link>
@@ -31,14 +31,17 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
-        Hezron Onyango
+      <h1 className="inline-flex z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
+        <div className="bg-blue-400 bg-clip-text font-display">
+          Software Developer
+        </div>{" "}
+        |<div className="bg-yellow-200 bg-clip-text">Graphic Designer</div>
       </h1>
       <br />
 
       {/* <img src="./public/3d-rendering-emotions.jpg" alt="profile picture" /> */}
       <Image
-        src="/images/prof.jpg"
+        src="/images/profile.webp"
         height={200}
         width={200}
         // placeholder="blur"
@@ -47,7 +50,7 @@ export default function Home() {
       />
       <br />
       <h2 className="text-gray-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
-        Software Developer | Graphic Designer
+        Hezron Onyango
       </h2>
 
       <div className="my-16 text-center animate-fade-in">

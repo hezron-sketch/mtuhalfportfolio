@@ -36,11 +36,11 @@ export default async function PostPage({ params }: Props) {
     (await redis.get<number>(["pageviews", "projects", slug].join(":"))) ?? 0;
 
   return (
-    <div className="bg-gray-400 backdrop-blur min-h-screen">
+    <div className="bg-gray-100 backdrop-blur min-h-screen">
       <Header project={project} views={views} />
       <ReportView slug={project.slug} />
 
-      <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+      <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless text-xl">
         <Mdx code={project.body.code} />
       </article>
     </div>

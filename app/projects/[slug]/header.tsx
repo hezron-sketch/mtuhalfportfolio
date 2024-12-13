@@ -41,10 +41,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
   }, []);
 
   return (
-    <header
-      ref={ref}
-      className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
-    >
+    <header ref={ref} className="relative isolate overflow-hidden bg-gray-400">
       <div
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
           isIntersecting
@@ -55,10 +52,10 @@ export const Header: React.FC<Props> = ({ project, views }) => {
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
             <span
-              title="View counter for this page"
+              title="Watching..."
               className={`duration-200 hover:font-medium flex items-center gap-1 ${
                 isIntersecting
-                  ? " text-zinc-400 hover:text-zinc-100"
+                  ? " text-zinc-900 hover:text-zinc-100"
                   : "text-zinc-600 hover:text-zinc-900"
               } `}
             >
@@ -69,18 +66,18 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             </span>
             <Link target="_blank" href="https://x.com/MtuHalf">
               <Twitter
-                className={`w-6 h-6 duration-200 hover:font-medium ${
+                className={`w-6 h-6 duration-200 hover:font-medium fill-blue-600 ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
+                    ? " text-blue-600 hover:text-zinc-100"
                     : "text-zinc-600 hover:text-zinc-900"
                 } `}
               />
             </Link>
             <Link target="_blank" href="https://github.com/hezron-sketch">
               <Github
-                className={`w-6 h-6 duration-200 hover:font-medium ${
+                className={`w-6 h-6 duration-200 hover:font-medium fill-black ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
+                    ? " text-black hover:text-zinc-100"
                     : "text-zinc-600 hover:text-zinc-900"
                 } `}
               />
@@ -95,7 +92,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 : "text-zinc-600 hover:text-zinc-900"
             } `}
           >
-            <ArrowLeft className="w-6 h-6 " />
+            <ArrowLeft className="w-6 h-6 text-black" />
           </Link>
         </div>
       </div>
@@ -105,7 +102,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
               {project.title}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-300">
+            <p className="mt-6 text-xl font-bold leading-8 text-white">
               {project.description}
             </p>
           </div>
