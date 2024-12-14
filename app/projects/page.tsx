@@ -67,7 +67,7 @@ export default async function ProjectsPage() {
                       <span>SOON</span>
                     )}
                   </div>
-                  <span className="flex items-center gap-1 text-xs text-zinc-500">
+                  <span className="flex items-center gap-1 text-xs text-white">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
                       views[featured.slug] ?? 0
@@ -81,7 +81,7 @@ export default async function ProjectsPage() {
                 >
                   {featured.title}
                 </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                <p className="mt-4 leading-8 duration-150 text-zinc-300 group-hover:text-zinc-200">
                   {featured.description}
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">

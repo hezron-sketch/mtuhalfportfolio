@@ -31,11 +31,8 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="inline-flex z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
-        <div className="bg-blue-400 bg-clip-text font-display">
-          Software Developer
-        </div>{" "}
-        |<div className="bg-yellow-200 bg-clip-text">Graphic Designer</div>
+      <h1 className="inline-flex z-10 text-5xl text-transparent duration-1000 bg-white cursor-default font-semibold text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
+        <div className="bg-gray-300 bg-clip-text ">Software Developer</div>{" "}
       </h1>
       <br />
 
@@ -49,13 +46,13 @@ export default function Home() {
         style={{ borderRadius: 100 }}
       />
       <br />
-      <h2 className="text-gray-200 sm:text-xl md:text-3xl text-edge-outline duration-1000 animate-fade-in font-black font-display">
+      <h2 className="text-gray-300 bg-clip-text sm:text-xl md:text-3xl duration-1000 animate-fade-in font-semibold font-display">
         Hezron Onyango
       </h2>
 
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-200 font-display">
-          A computer enthusiast, I code ☕ and craft visuals🖼️.
+        <h2 className="text-md text-zinc-200 font-display text-edge-outline bg-yellow-900">
+          Am a computer enthusiast, I use computers to make life easier.
         </h2>
       </div>
     </div>
