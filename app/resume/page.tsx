@@ -35,12 +35,13 @@ const experiences: Experience[] = [
   {
     company: "Localhost Developers",
     position: "Software Developer",
-    duration: "Jun 2022 - Present",
+    duration: "Jun 2022",
     responsibilities: [
       "Developed the localhostwines Web app",
       "Building responsive and interactive UI components.",
       "Optimizing application performance.",
       "Writing unit and integration tests.",
+      "Maintenance and management of localhostwines website",
     ],
   },
 ];
@@ -49,7 +50,7 @@ const education: Education[] = [
   {
     institution: "Technical University of Mombasa",
     degree: "B.Sc. in Computer Science",
-    duration: "2021 - Present",
+    duration: "2021 - 2025",
   },
 ];
 
@@ -91,13 +92,12 @@ export default function Resume() {
               </div>
               <br />
               <br />
-              <hr />
               <br />
             </p>
           </header>
 
           <section>
-            <h2 className="font-bold ">Experience</h2>
+            <h2 className="font-bold text-4xl">Experience</h2>
             {experiences.map((exp, index) => (
               <div key={index} className="experience">
                 <h3 className="font-bold">
@@ -113,10 +113,10 @@ export default function Resume() {
             ))}
           </section>
           <br />
-          <hr />
+
           <br />
           <section>
-            <h2 className="font-bold">Education</h2>
+            <h2 className="font-bold text-4xl">Education</h2>
             {education.map((edu, index) => (
               <div key={index} className="education">
                 <h3>{edu.degree}</h3>
@@ -126,10 +126,11 @@ export default function Resume() {
             ))}
           </section>
           <br />
-          <hr />
+
           <br />
           <section>
-            <h2 className="font-bold">Skills</h2>
+            <h2 className="font-bold text-4xl">Skills</h2>
+
             <ul className="skills">
               {skills.map((skill, index) => (
                 <li key={index}>
