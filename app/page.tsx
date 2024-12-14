@@ -51,7 +51,7 @@ export default function Home() {
       </h2>
 
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-md text-zinc-200 font-display text-edge-outline bg-yellow-800">
+        <h2 className="text-md text-zinc-200 font-display text-edge-outline">
           Am a computer enthusiast, I use computers to make life easier.
         </h2>
       </div>
