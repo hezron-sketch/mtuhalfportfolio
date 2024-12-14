@@ -140,6 +140,7 @@ export default function Resume() {
           </section>
         </div>
       </div>
+      <div className="h-20"></div>
     </>
   );
 }
