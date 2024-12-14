@@ -31,7 +31,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="inline-flex z-10 text-5xl text-transparent duration-1000 bg-white cursor-default font-semibold text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
+      <h1 className=" inline-flex z-10 text-4xl text-transparent duration-1000 bg-white cursor-default font-semibold text-edge-outline animate-title sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text ">
         <div className="bg-gray-300 bg-clip-text ">Software Developer</div>{" "}
       </h1>
       <br />
@@ -51,7 +51,7 @@ export default function Home() {
       </h2>
 
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-md text-zinc-200 font-display text-edge-outline bg-yellow-900">
+        <h2 className="text-md text-zinc-200 font-display text-edge-outline bg-yellow-800">
           Am a computer enthusiast, I use computers to make life easier.
         </h2>
       </div>
