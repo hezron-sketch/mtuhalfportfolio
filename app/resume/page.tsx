@@ -55,6 +55,7 @@ const education: Education[] = [
 ];
 
 const skills: Skill[] = [
+  { name: "ML & AI", level: "Intermediate" },
   { name: "Python", level: "Advanced" },
   { name: "Flutter", level: "Intermediate" },
   { name: "Web3", level: "Intermediate" },
@@ -92,50 +93,53 @@ export default function Resume() {
               <br />
             </p>
           </header>
-
-          <section>
-            <h2 className="font-bold text-4xl">Experience</h2>
-            {experiences.map((exp, index) => (
-              <div key={index} className="experience">
-                <h3 className="font-bold">
-                  {exp.position} - {exp.company}
-                </h3>
-                <p>{exp.duration}</p>
-                <ul>
-                  {exp.responsibilities.map((resp, idx) => (
-                    <li key={idx}>{resp}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
-          <br />
-
-          <br />
-          <section>
-            <h2 className="font-bold text-4xl">Education</h2>
-            {education.map((edu, index) => (
-              <div key={index} className="education">
-                <h3>{edu.degree}</h3>
-                <p>{edu.institution}</p>
-                <p>{edu.duration}</p>
-              </div>
-            ))}
-          </section>
-          <br />
-
-          <br />
-          <section>
-            <h2 className="font-bold text-4xl">Skills</h2>
-
-            <ul className="skills">
-              {skills.map((skill, index) => (
-                <li key={index}>
-                  {skill.name} - {skill.level}
-                </li>
+          <div className="flex flex-col sm:flex-row gap-5 p-0">
+            <section>
+              <h2 className="font-bold text-4xl">Experience</h2>
+              <br />
+              {experiences.map((exp, index) => (
+                <div key={index} className="experience">
+                  <div className="font-bold text-xl">
+                    {exp.position} - {exp.company}
+                  </div>
+                  <p>{exp.duration}</p>
+                  <ul>
+                    {exp.responsibilities.map((resp, idx) => (
+                      <li key={idx}>{resp}</li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
-          </section>
+            </section>
+            <br />
+
+            <br />
+            <section>
+              <h2 className="font-bold text-4xl">Education</h2>
+              <br />
+              {education.map((edu, index) => (
+                <div key={index} className="education">
+                  <h3>{edu.degree}</h3>
+                  <p>{edu.institution}</p>
+                  <p>{edu.duration}</p>
+                </div>
+              ))}
+            </section>
+            <br />
+
+            <br />
+            <section>
+              <h2 className="font-bold text-4xl">Skills</h2>
+              <br />
+              <ul className="skills">
+                {skills.map((skill, index) => (
+                  <li key={index}>
+                    {skill.name} - {skill.level}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
       <div className="h-20"></div>
