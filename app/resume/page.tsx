@@ -70,10 +70,9 @@ export default function Resume() {
     <>
       <Navigation />
       <div className="flex items-center m-auto">
-        <div className="m-auto pt-20 px-10 text-white text-xl text-outline-edge">
+        <div className="m-auto pt-20 px-10 text-white  font-display">
           <header>
             <h1 className="font-bold text-4xl">Hezron Onyango</h1>
-            <br />
             <p>
               <div className="inline-flex">
                 <PinIcon size={20} /> &nbsp; Mombasa, KE
