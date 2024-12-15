@@ -56,11 +56,11 @@ const education: Education[] = [
 
 const skills: Skill[] = [
   { name: "ML & AI", level: "Intermediate" },
-  { name: "Python", level: "Advanced" },
+  { name: "Web Development", level: "Advanced" },
+  { name: "Python for data science", level: "Advanced" },
   { name: "Flutter", level: "Intermediate" },
   { name: "Web3", level: "Intermediate" },
   { name: "JavaScript", level: "Advanced" },
-  { name: "Django", level: "Advanced" },
   { name: "Data analysis", level: "Advanced" },
   { name: "Git & github", level: "Advanced" },
   { name: "React/NextJS", level: "Advanced" },
