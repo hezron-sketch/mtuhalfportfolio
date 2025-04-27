@@ -38,7 +38,7 @@ export default function Home() {
 
       {/* <img src="./public/3d-rendering-emotions.jpg" alt="profile picture" /> */}
       <Image
-        src="/images/profile.webp"
+        src="/images/profile.png"
         height={200}
         width={200}
         // placeholder="blur"
